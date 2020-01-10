@@ -382,7 +382,7 @@ class VP_Option
 	function vp_verify_nonce()
 	{
 		$nonce  = vp_sanitize_text_field($_POST['nonce']);
-		$verify = vp_check_ajax_referer('vafpress', 'nonce', false);
+		$verify = check_ajax_referer('vafpress', 'nonce', false);
 		if($verify)
 		{
 			$result['status']  = true;

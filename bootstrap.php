@@ -41,7 +41,7 @@ foreach (glob(VP_DATA_DIR . "/*.php") as $datasource)
 
 if (!function_exists('vp_sanitize_text_field'))
 {
-    function sanitize_text_field($val, $raw = false)
+    function vp_sanitize_text_field($val, $raw = false)
     {
         if ($raw)
         {
